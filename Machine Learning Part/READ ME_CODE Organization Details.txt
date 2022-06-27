@@ -1,0 +1,41 @@
+Following is a brief description of all code files involved in the Machine Learning process:
+
+1. MA_HE_train.py, MA_HE_test.py
+
+Used to extract features for the MA, HE, and NONE classes from the candidate regions and store the features as CSV files
+
+2. SE_EX_train.py, SE_EX_test.py
+
+Used to extract features for the SE, EX, and NONE classes from the candidate regions and store the features as CSV files
+
+3. ML_balanced_data_MA_HE.py
+
+Used to do Machine Learning on a balanced version of the MA HE NONE data, all classifiers as well as the standard scalar is saved
+
+4. ML_balanced_data_SE_EX.py
+
+Used to do Machine Learning on a balanced version of the SE EX NONE data, all classifiers as well as the standard scalar is saved
+
+5. ML_balanced_loss_MA_HE.py
+
+Used to do Machine Learning on the MA HE NONE data using weighted loss, all classifiers as well as the standard scalar is saved
+
+6. ML_balanced_loss_SE_EX.py
+
+Used to do Machine Learning on the SE EX NONE data using weighted loss, all classifiers as well as the standard scalar is saved
+
+7. reconstruction_MA_HE.py
+
+Used to make use of all the learned classifiers to label the candidates as MA HE or NONE extracted from the image processing pipeling, the labelled images are saved as npy files for the final evaluation
+
+7. reconstruction_SE_EX.py
+
+Used to make use of all the learned classifiers to label the candidates as SE EX or NONE extracted from the image processing pipeling, the labelled images are saved as npy files for the final evaluation
+
+8. metrics_text.py
+
+Used to make the final plots and calculate the AUC
+
+9. visualizing.py
+
+Used to view the npy files as images
